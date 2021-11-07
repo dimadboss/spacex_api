@@ -10,6 +10,7 @@ class Options {
   num limit;
   bool pagination;
   var populate;
+  bool upcoming;
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
@@ -23,6 +24,12 @@ class Options {
     data.removeWhere((key, value) => key == null || value == null);
     final Map<String, dynamic> options = new Map<String, dynamic>();
     options['options'] = data;
+
+    final query = new Map<String, dynamic>();
+    if (this.upcoming != null) {
+      query['upcoming'] = this.upcoming;
+    }
+    options['query'] = query;
     return options;
   }
 }
