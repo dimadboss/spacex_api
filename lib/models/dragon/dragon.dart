@@ -106,8 +106,8 @@ class Dragon {
   set diameter(Diameter diameter) => _diameter = diameter;
   String get firstFlight => _firstFlight;
   set firstFlight(String firstFlight) => _firstFlight = firstFlight;
-  List<String> get flickrImages => _flickrImages;
-  set flickrImages(List<String> flickrImages) => _flickrImages = flickrImages;
+  List get flickrImages => _flickrImages;
+  set flickrImages(List flickrImages) => _flickrImages = flickrImages;
   String get name => _name;
   set name(String name) => _name = name;
   String get type => _type;
