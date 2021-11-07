@@ -7,6 +7,7 @@ class Endpoints {
   static const dragons = "dragons";
   static const history = "history";
   static const launches = "launches";
+  static const launchesUpcoming = "launches/upcoming";
   static const launchpads = "launchpads";
   static const landpads = "landpads";
   static const payloads = "payloads";
