@@ -144,6 +144,10 @@ class SpaceXApi {
       header: headers,
     );
   }
+  
+  Future<Response> getAllUpcomingLaunches() {
+    return _req.getData(endpoint: Endpoints.launchesUpcoming);
+  }
 
   /// Launchpads
   Future<Response> getAllLaunchPads() {
